@@ -1,5 +1,4 @@
 
-import { motion } from "framer-motion";
 import WeddingHeader from "@/components/WeddingHeader";
 import PhotoGallery from "@/components/PhotoGallery";
 import WeddingDetails from "@/components/WeddingDetails";
@@ -8,12 +7,7 @@ import RSVP from "@/components/RSVP";
 const Index = () => {
   return (
     <div className="min-h-screen bg-white font-montserrat text-gray-800">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-200 to-transparent"
-      />
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-200 to-transparent" />
       
       <WeddingHeader />
       <PhotoGallery />

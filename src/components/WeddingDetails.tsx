@@ -1,16 +1,10 @@
 
-import { motion } from "framer-motion";
 import { CalendarIcon, MapPinIcon, ClockIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const WeddingDetails = () => {
   return (
-    <motion.section 
-      className="py-16 md:py-24 bg-white"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.4 }}
-    >
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="font-cormorant text-3xl md:text-4xl text-center text-gray-800 mb-12">Детали торжества</h2>
         
@@ -62,7 +56,7 @@ const WeddingDetails = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

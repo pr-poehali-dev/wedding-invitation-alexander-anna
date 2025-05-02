@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -37,12 +36,7 @@ const RSVP = () => {
   };
 
   return (
-    <motion.section 
-      className="py-16 md:py-24 bg-gray-50"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.6 }}
-    >
+    <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-md mx-auto px-4">
         <h2 className="font-cormorant text-3xl md:text-4xl text-center text-gray-800 mb-8">Подтвердите присутствие</h2>
         <p className="text-center font-montserrat text-gray-600 mb-8">
@@ -93,7 +87,7 @@ const RSVP = () => {
           </CardContent>
         </Card>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
